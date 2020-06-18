@@ -26,7 +26,12 @@ function genHorizonParedPixels(upperOne, restOne) {
   return chalk`{rgb(${upperOneRGB.r},${upperOneRGB.g},${upperOneRGB.b}).bgRgb(${restOneRGB.r},${restOneRGB.g},${restOneRGB.b}) ${PX_CHR}}`
 }
 
-Jimp.read('lenna.png')
+const args = process.argv;
+const filePath = args[2];
+console.log("filePath", filePath)
+
+module.exports = () => {
+  Jimp.read(`${process.cwd()}/${filePath || 'lenna.png'}`)
   .then(async img => {
     await img.resize(...calcFitResulution({w: img.bitmap.width, h: img.bitmap.height}));
 
@@ -45,6 +50,8 @@ Jimp.read('lenna.png')
   })
   .catch(err => {
     console.error(err);
+    process.exit(0);
   });
 
-process.stdin.resume();
+  process.stdin.resume();
+}
