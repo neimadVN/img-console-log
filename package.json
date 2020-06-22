@@ -1,0 +1,28 @@
+{
+  "name": "log-img",
+  "version": "1.2.1",
+  "description": "support console.log a image or print an image file into terminal",
+  "main": "index.js",
+  "bin": {
+    "log-img": "bin/log-img.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neimadVN/img-console-log"
+  },
+  "author": "hoanglam41@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "jimp": "^0.13.0"
+  },
+  "keywords": [
+    "image",
+    "console",
+    "log",
+    "log-img"
+  ]
+}
