@@ -22,6 +22,8 @@ npm i -g log-img
 Using as cli
 ```sh
 log-img lenna.jpg
+log-img https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png
+log-img https://source.unsplash.com/random
 ```
 
 Using as package
@@ -31,4 +33,9 @@ const logImg = require('log-img');
 console.log('this is image:');
 logImg(Blob_Base64_Path2File_anyJimpLibCanRead);
 ```
+
+`log-img` can log any thing that Jimp lib support. Such as path to a file, URL, dimensions, ...
+
+[Go to Jimp?](https://www.npmjs.com/package/jimp)
+
 ---

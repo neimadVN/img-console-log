@@ -1,6 +1,6 @@
 {
   "name": "log-img",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "support console.log a image or print an image file into terminal",
   "main": "index.js",
   "bin": {
