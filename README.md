@@ -1,5 +1,7 @@
 <h1 align="center">Welcome to log-img 👋</h1>
+
 ![result](https://github.com/neimadVN/img-console-log/blob/master/core/screen-shot.png?raw=true)
+This package help you to console.log image into your console or print out an image file into terminal cli
 
 ---
 ## ✨ Installation
